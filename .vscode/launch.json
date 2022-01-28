@@ -1,0 +1,26 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "command": "npm run dev",
+      "name": "npm run dev",
+      "request": "launch",
+      "type": "node-terminal",
+      "env": {
+        "NODE_TLS_REJECT_UNAUTHORIZED": "0"
+      }
+    },
+    {
+      "type": "firefox",
+      "request": "launch",
+      "name": "Firefox Debug",
+      "url": "http://localhost:3000",
+      "webRoot": "${workspaceFolder}"
+    }
+  ],
+  "debug.javascript.terminalOptions": {
+    "skipFiles": [
+      "<node_internals>/**"
+    ]
+  },
+}
