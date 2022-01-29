@@ -4,10 +4,11 @@
     "lib": ["DOM", "DOM.Iterable", "ES2019"],
     "isolatedModules": true,
     "esModuleInterop": true,
+    "strictNullChecks": true,
     "jsx": "react-jsx",
     "moduleResolution": "node",
     "resolveJsonModule": true,
-    "target": "ES2019",
+    "target": "ES2020",
     "strict": true,
     "baseUrl": ".",
     "paths": {
