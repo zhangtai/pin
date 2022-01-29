@@ -87,7 +87,9 @@ function mergeList<T extends GenericBookmarkItem>(
         provide.items
       ) {
         baseItem.items = mergeList(baseItem.items || [], provide.items);
-      } else if (provide?.mode === "remove") {
+      } else if (provide.mode === "override") {
+        baseItem.items = provide.items;
+      } else if (provide.mode === "remove") {
         list = list.filter((g) => g.name !== provide.name);
       }
     } else {
